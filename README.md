@@ -107,7 +107,7 @@ You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/doc
 
 MIT License
 
-Copyright (c) 2017 gatsbyjs <br />Copyright (c) 2019 Yunindyo Prabowo
+Copyright (c) 2017 gatsbyjs <br />Copyright (c) 2018 greg lobinski <br />Copyright (c) 2019 Yunindyo Prabowo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
