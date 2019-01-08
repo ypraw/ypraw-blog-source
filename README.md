@@ -7,11 +7,11 @@ A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge&logo=appveyor)](https://github.com/prettier/prettier)
 
 
-## Description
+## Deskripsi
 
-Source code untuk blog saya.
+Source code untuk blog saya. Dibuat menggunakan GatsbyJS dan ReactJS
 
-## Features:
+## Fitur:
 
 - Easy editable content in **Markdown** files (posts, pages and parts)
 - **CSS** with `styled-jsx` and `PostCSS`
@@ -36,35 +36,37 @@ Source code untuk blog saya.
 
 ## Instalasi GatsbyJS
 
-If you do not have Gatsby Cli installed yet, do it first.
+Pastikan bahwa nodeJS telah terinstall pada komputer anda.
+Kemudian install gatsby-cli dengan syntaks berikut,
 
-```text
+```bash
 npm install --global gatsby-cli
 ```
 
-More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
+Info lebih lanjut dapat ditemukan dalam tautan berikut ini [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
 
-## Getting started
+## Memulai Instalasi Tema
 
-Install the starter using Gatsby Cli `gatsby new` command.
+Install tema menggunakan command dibawah ini
 
 ```text
 gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/ypraw/ypraw-blog-source.git
 ```
 
-Go into the newly created directory and run
+arahkan ke folder yang telah dibuat lalu mulai dengan perintah dibawah ini untuk melihat tema.
 
-```text
+```bash
 gatsby develop
 ```
 
-to hot-serve your website on http://localhost:8000 or
+arahkan pada `localhost:8000` atau `127.0.0.1:8000`, anda akan melihat tampilan web dengan mode developer.
+untuk tahap produksi gunakan perintah berikut
 
 ```text
 gatsby build
 ```
 
-to create static site ready to host (/public).
+perintah ini akan membuat folder (/public) yang siap diupload pada hosting yang anda gunakan.
 
 ##### External services
 
