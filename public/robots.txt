@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://ypraw.gitlab.io/sitemap.xml
