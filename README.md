@@ -3,7 +3,7 @@
 A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
 
 
-[![GitHub license]](https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/ypraw/ypraw-blog-source.svg)](https://github.com/ypraw/ypraw-blog-source/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 
@@ -49,7 +49,7 @@ More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
 Install the starter using Gatsby Cli `gatsby new` command.
 
 ```text
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/ypraw/gatsby-starter-hero-blog.git
+gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/ypraw/ypraw-blog-source.git
 ```
 
 Go into the newly created directory and run
