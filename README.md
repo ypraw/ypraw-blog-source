@@ -3,8 +3,8 @@
 A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
 
 
-[![GitHub license](https://img.shields.io/github/license/ypraw/ypraw-blog-source.svg)](https://github.com/ypraw/ypraw-blog-source/blob/master/LICENSE)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![GitHub license](https://img.shields.io/github/license/ypraw/ypraw-blog-source.svg?style=for-the-badge&logo=appveyor)](https://github.com/ypraw/ypraw-blog-source/blob/master/LICENSE)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge&logo=appveyor)](https://github.com/prettier/prettier)
 
 
 ## Description
