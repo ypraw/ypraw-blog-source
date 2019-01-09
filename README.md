@@ -17,7 +17,7 @@ Source code untuk blog saya. Dibuat menggunakan GatsbyJS dan ReactJS
 - **CSS** with `styled-jsx` and `PostCSS`
 - **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
 - **Social** sharing (Twitter, Facebook, Google, LinkedIn)
-- **Comments** (Disqus)
+- **Comments** (Disqus or Facebook)
 - **Images** lazy loading and `webp` support (gatsby-image)
 - Post **categories** (category based post list)
 - Full text **searching** (Algolia)

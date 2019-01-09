@@ -11,7 +11,7 @@ module.exports = {
   // author
   authorName: "Yunindyo Prabowo",
   authorTwitterAccount: "yunindyo",
-  
+
   /* info */
   headerTitle: "Yunindyo Prabowo",
   headerSubTitle: "Wanna Be a Pythonist",
@@ -33,8 +33,17 @@ module.exports = {
 
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/ypraw" },
-    { name: "twitter", url: "https://twitter.com/yunindyo" },
-    { name: "facebook", url: "https://facebook.com/yunindyoprabowo" }
+    {
+      name: "github",
+      url: "https://github.com/ypraw"
+    },
+    {
+      name: "twitter",
+      url: "https://twitter.com/yunindyo"
+    },
+    {
+      name: "facebook",
+      url: "https://facebook.com/yunindyoprabowo"
+    }
   ]
 };
