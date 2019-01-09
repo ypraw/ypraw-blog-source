@@ -80,7 +80,10 @@ ALGOLIA_ADMIN_API_KEY=...
 ALGOLIA_INDEX_NAME=...
 FB_APP_ID=...
 ```
-**PERINGATAN** : **_Pada dasarnya file .env akan di ignore oleh gitignore, pastikan kembali bahwa file `.gitignore` mengandung .env, jika belum tulis .env pada file .gitignore_**
+**PERINGATAN** : 
+- **_Pada dasarnya file .env akan di ignore oleh gitignore, pastikan kembali bahwa file `.gitignore` mengandung .env, jika belum tulis .env pada file .gitignore_**
+
+- **_Jika anda tidak mengisi data Algolia pada file `.env`, maka proses build akan gagal, untuk itu anda diwajibkan untuk mendaftar algolia terlebih dahulu, [algolia](https://www.algolia.com/), sebagai catatan bagi anda yang masih mahasiswa, dosen, ataupun civitas akedemi lainnya yang memiliki email berdomain akademik seperti `.ac.id`,   `.edu`, dsb gunakanlah fitur github education pack untuk mendapatkan beberapa package premium seperti github developer, domain namecheap dan algolia education pack [disini](https://education.github.com/pack)_**
 
 ### Instruksi dan tutorial
 * Comment System
