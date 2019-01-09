@@ -98,7 +98,7 @@ You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/doc
 
 - [Yunindyo Prabowo](https://github.com/ypraw)
 
-- Thanks to Base Theme built by [@greglobinski](https://github.com/greglobinski)
+- Thanks to Base Theme develop by [@greglobinski](https://github.com/greglobinski)
 
 ## Contributing
 
