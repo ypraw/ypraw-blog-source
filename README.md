@@ -33,10 +33,12 @@ Source code untuk blog saya. Dibuat menggunakan GatsbyJS dan ReactJS
 - **Prettier** code styling
 - Webpack `BundleAnalyzerPlugin`
 - **Gravatar** image (optional) instead local Avatar/Logo image
+- **Create Post** for now only tested on Linux, Mac, Unix-like :(
 
 ## Instalasi GatsbyJS
 
-Pastikan bahwa nodeJS telah terinstall pada komputer anda.
+Pastikan bahwa nodeJS telah terinstall pada komputer anda. Jika belum anda dapat menginstallnya dari sini [NodeJS](https://nodejs.org/en/).
+
 Kemudian install gatsby-cli dengan syntaks berikut,
 
 ```bash
@@ -49,26 +51,31 @@ Info lebih lanjut dapat ditemukan dalam tautan berikut ini [GatsbyJS.org](https:
 
 Install tema menggunakan command dibawah ini
 
-```text
+```bash
 gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/ypraw/ypraw-blog-source.git
+
+#contoh
+
+gatsby new my_blog https://github.com/ypraw/ypraw-blog-source.git
 ```
 
 arahkan ke folder yang telah dibuat lalu mulai dengan perintah dibawah ini untuk melihat tema.
 
 ```bash
+cd my_blog \
 gatsby develop
 ```
 
-arahkan pada `localhost:8000` atau `127.0.0.1:8000`, anda akan melihat tampilan web dengan mode developer.
-untuk tahap produksi gunakan perintah berikut
+setelah prosesi generate selesai, buka browser anda lalu arahkan pada `localhost:8000` atau `127.0.0.1:8000`, anda akan melihat tampilan web dengan mode developer.
 
+untuk tahap produksi gunakan perintah berikut
 ```text
 gatsby build
 ```
 
 perintah ini akan membuat folder (/public) yang siap diupload pada hosting yang anda gunakan.
 
-##### External services
+## Service Tambahan
 
 Tema ini menggunakan beberapa service untuk beberapa fungsi seperti komentar, pencarian, dan google analitik. untuk mengakses service-service tersebut maka diperlukan beberapa konfigurasi. Pada folder root , buatlah sebuah file `.env` dan isikan seperti berikut ini,
 
@@ -80,15 +87,25 @@ ALGOLIA_ADMIN_API_KEY=...
 ALGOLIA_INDEX_NAME=...
 FB_APP_ID=...
 ```
+
 **PERINGATAN** : 
 - **_Pada dasarnya file .env akan di ignore oleh gitignore, pastikan kembali bahwa file `.gitignore` mengandung .env, jika belum tulis .env pada file .gitignore_**
 
 - **_Jika anda tidak mengisi data Algolia pada file `.env`, maka proses build akan gagal, untuk itu anda diwajibkan untuk mendaftar algolia terlebih dahulu, [algolia](https://www.algolia.com/), sebagai catatan bagi anda yang masih mahasiswa, dosen, ataupun civitas akedemi lainnya yang memiliki email berdomain akademik seperti `.ac.id`,   `.edu`, dsb gunakanlah fitur github education pack untuk mendapatkan beberapa package premium seperti github developer, domain namecheap dan algolia education pack [disini](https://education.github.com/pack)_**
 
 ### Instruksi dan tutorial
-* Comment System
+- #### Comment System
     - Pada dasarnya tema default hanya membawa sistem komentar dari facebook. Untuk mengaktifkannya maka isikan id pada `FB_APP_ID`  di file `.env` seperti penjelasan sebelumnya.
     - Untuk mengaktifkan komentar sistem menggunakan disqus, isikan `disqusShortname` anda pada file [config.js](/content/meta/config.js)
+- #### Create Post {_only unix-like, Linux, MacOS_}
+    - Jalankan perintah berikut
+    ```bash
+    npm run create-post [JUDUL] <space>[Kategori] <space> [Author]
+    ```
+    contoh,
+    ```bash
+    npm run create-post "New Post" "Kategorinya" "ypraw"
+    ```
 
 ## Windows users
 
