@@ -70,8 +70,6 @@ perintah ini akan membuat folder (/public) yang siap diupload pada hosting yang 
 
 ##### External services
 
-The starter uses external services for some functions: comments, searching, analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
-
 Tema ini menggunakan beberapa service untuk beberapa fungsi seperti komentar, pencarian, dan google analitik. untuk mengakses service-service tersebut maka diperlukan beberapa konfigurasi. Pada folder root , buatlah sebuah file `.env` dan isikan seperti berikut ini,
 
 ```text
