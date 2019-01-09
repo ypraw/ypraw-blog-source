@@ -72,8 +72,7 @@ perintah ini akan membuat folder (/public) yang siap diupload pada hosting yang 
 
 The starter uses external services for some functions: comments, searching, analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
 
-Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
-<br />By default, your `.env` file will be ignored by git. Remove `.env` from `.gitignore` in order to be able to push the file to your repository.
+Tema ini menggunakan beberapa service untuk beberapa fungsi seperti komentar, pencarian, dan google analitik. untuk mengakses service-service tersebut maka diperlukan beberapa konfigurasi. Pada folder root , buatlah sebuah file `.env` dan isikan seperti berikut ini,
 
 ```text
 GOOGLE_ANALYTICS_ID=...
@@ -83,9 +82,12 @@ ALGOLIA_ADMIN_API_KEY=...
 ALGOLIA_INDEX_NAME=...
 FB_APP_ID=...
 ```
+**PERINGATAN** : **_Pada dasarnya file .env akan di ignore oleh gitignore, pastikan kembali bahwa file `.gitignore` mengandung .env, jika belum tulis .env pada file .gitignore_**
 
-### Instructions & tutorials
-
+### Instruksi dan tutorial
+* Comment System
+    - Pada dasarnya tema default hanya membawa sistem komentar dari facebook. Untuk mengaktifkannya maka isikan id pada `FB_APP_ID`  di file `.env` seperti penjelasan sebelumnya.
+    - Untuk mengaktifkan komentar sistem menggunakan disqus, isikan `disqusShortname` anda pada file [config.js](/content/meta/config.js)
 
 ## Windows users
 

@@ -4,7 +4,10 @@ module.exports = {
   siteDescription: "ypraw code snippets and chit-chat XD",
   siteUrl: "https://ypraw.github.io",
   pathPrefix: "",
-  disqusShortname: "ypraw-github-io",
+  /* Disqus */
+  /* biarkan bagian disqusShortname seperti ini jika anda menggunakan facebook comment */
+  /* uncomment dan isikan disqus short name yang anda dapatkan dari disqus jika anda menggunakan disqus */
+  //disqusShortname: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
 
