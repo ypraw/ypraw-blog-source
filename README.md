@@ -34,6 +34,7 @@ Source code untuk blog saya. Dibuat menggunakan GatsbyJS dan ReactJS
 - Webpack `BundleAnalyzerPlugin`
 - **Gravatar** image (optional) instead local Avatar/Logo image
 - **Create Post** for now only tested on Linux, Mac, Unix-like :(
+- **Pagination 5 articles per page**
 
 ## Instalasi GatsbyJS
 
