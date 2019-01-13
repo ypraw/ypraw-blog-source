@@ -42,6 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
     const postTemplate = path.resolve("./src/templates/PostTemplate.js");
     const pageTemplate = path.resolve("./src/templates/PageTemplate.js");
     const categoryTemplate = path.resolve("./src/templates/CategoryTemplate.js");
+    const IndexPage = path.resolve("./src/templates/index.js");
     resolve(
       graphql(
         `
@@ -137,24 +138,52 @@ exports.createPages = ({ graphql, actions }) => {
             }
           });
         });
+
+        // Create blog post list pages
+        const postsPerPage = 5;
+        const numPages = Math.ceil(posts.length / postsPerPage);
+        _.times(numPages, i => {
+          createPage({
+            path: i === 0 ? `/` : `/${i + 1}`,
+            component: IndexPage,
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1
+            }
+          });
+        });
       })
     );
   });
 };
 
-exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
+exports.onCreateWebpackConfig = ({ loaders, stage, actions }) => {
   switch (stage) {
     case `build-javascript`:
       actions.setWebpackConfig({
-        plugins: [
-          new BundleAnalyzerPlugin({
-            analyzerMode: "static",
-            reportFilename: "./report/treemap.html",
-            openAnalyzer: true,
-            logLevel: "error",
-            defaultSizes: "gzip"
-          })
-        ]
+        // plugins: [
+        //   new BundleAnalyzerPlugin({
+        //     analyzerMode: "static",
+        //     reportFilename: "./report/treemap.html",
+        //     openAnalyzer: true,
+        //     logLevel: "error",
+        //     defaultSizes: "gzip"
+        //   })
+        // ]
+        devtool: false,
+        module: {
+          rules: [
+            {
+              test: /\.js$/,
+              exclude: modulePath => /node_modules/.test(modulePath),
+              // whitelist specific es6 module
+              // && !/node_modules\/@papertrailio\/js-core/.test(modulePath),
+              use: loaders.js()
+            }
+          ]
+        }
       });
   }
 };

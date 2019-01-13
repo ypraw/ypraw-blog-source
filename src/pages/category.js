@@ -59,7 +59,6 @@ const CategoryPage = props => {
             ))}
             {/* --- STYLES --- */}
             <style jsx>{`
-            
               h2 {
                 margin: 0 0 0.5em;
               }
@@ -101,7 +100,6 @@ export const query = graphql`
             title
             category
             author
-          
           }
         }
       }

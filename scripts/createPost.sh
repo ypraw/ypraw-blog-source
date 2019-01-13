@@ -9,10 +9,6 @@ title="${1:-'title'}"
 slug="$(slugify "$title")"
 folder="./content/posts/$(date +%F)--$slug"
 
-# echo "title: $title"
-# echo "slug: $slug"
-# echo "folder: $folder"
-
 if [ -d "$folder" ]; then
   printf "\\nWARNING: Post already exists: \"%s\"\\n\\n" "$title"
   printf "To delete current post: \\n  rm -rf %s\\n\\n" "$folder"
