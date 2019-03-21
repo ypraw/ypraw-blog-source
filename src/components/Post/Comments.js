@@ -27,14 +27,13 @@ const Comments = props => {
       </React.Fragment>
     );
   } else {
-    const title = post && post.frontmatter && post.frontmatter.title;
-    const category = post && post.frontmatter && post.frontmatter.category;
-    const url = config.siteUrl + config.pathPrefix + slug;
-    const disqusConfig = {
-      identifier: `${post && post.fields && post.fields.prefix}/${category}`,
-      title: title || slug,
-      url
-    };
+    const disqusConfig = props.article
+      ? {
+          url: props.article.url,
+          identifier: props.article.id,
+          title: props.article.title
+        }
+      : null;
     //console.log("POST COMMENTS:", JSON.stringify(disqusConfig));
     // console.log("POST COMMENTS PROPS:", JSON.stringify(props, null, 2));
     return (
@@ -58,7 +57,8 @@ Comments.propTypes = {
   facebook: PropTypes.object.isRequired,
   post: PropTypes.object.isRequired,
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
+  article: PropTypes.shape
 };
 
 // Comments.propTypes = {
