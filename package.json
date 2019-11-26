@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "antd": "^3.7.0",
-    "disqus-react": "^1.0.5",
+    "disqus-react": "^1.0.7",
     "fontfaceobserver": "^2.0.13",
     "gatsby": "^2.0.21",
     "gatsby-image": "^2.0.5",
@@ -66,12 +66,9 @@
     "lint-errors": "eslint src/**/*.{js,jsx} --quiet",
     "lint": "eslint src/**/*.{js,jsx}",
     "stylelint": "stylelint src/**/*.js",
-    "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
-    "create-post": "sh ./scripts/createPost.sh",
-    "test": "echo \"no test specified\" && exit 0"
+    "generate-app-icons": "sh ./scripts/generate-app-icons.sh"
   },
   "devDependencies": {
-    "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4",
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
     "babel-eslint": "^8.2.6",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
@@ -87,9 +84,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
-    "gh-pages": "^2.0.1",
     "json-loader": "^0.5.7",
-    "lodash.camelcase": "^4.3.0",
     "postcss": "^7.0.0",
     "postcss-cli": "^5.0.1",
     "postcss-cssnext": "^3.1.0",
