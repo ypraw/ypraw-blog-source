@@ -4,3 +4,4 @@ public
 .env
 .directory
 .gitignore
+node_modules
