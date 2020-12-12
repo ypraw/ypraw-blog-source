@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { InstantSearch, SearchBox, Hits, Stats, Pagination } from "react-instantsearch/dom";
+import { InstantSearch, SearchBox, Hits, Stats, Pagination } from "react-instantsearch-dom";
+import algoliasearch from "algoliasearch";
 
 import Hit from "./Hit";
 
 const Search = props => {
   const { algolia, theme } = props;
-
+  const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey);
   return (
     <React.Fragment>
       <div className="search">
         {algolia &&
           algolia.appId && (
             <InstantSearch
-              appId={algolia.appId}
-              apiKey={algolia.searchOnlyApiKey}
+              searchClient={searchClient}
               indexName={algolia.indexName}
             >
               <SearchBox translations={{ placeholder: "Search" }} />
